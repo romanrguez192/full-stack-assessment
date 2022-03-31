@@ -1,0 +1,85 @@
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.background {
+  min-height: calc(100vh + 2.5rem);
+  background-image: url("../public/background.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 1rem;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  top: -2.5rem;
+}
+
+.faqs {
+  margin-bottom: 1.5rem;
+}
+
+.faq {
+  border-bottom: 2px solid #ebebeb;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  color: #595959;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.25s ease-in-out;
+}
+
+.question:hover,
+.active {
+  color: #6ecbb8;
+}
+
+.paragraph {
+  color: #41464b;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: justify;
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .question {
+    font-size: 1.25rem;
+  }
+
+  .paragraph {
+    font-size: 1.25rem;
+  }
+}
