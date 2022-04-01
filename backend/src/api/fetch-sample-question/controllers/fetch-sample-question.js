@@ -9,6 +9,10 @@ module.exports = {
       answer: res.data.delivery,
     };
 
-    ctx.response.body = sample;
+    await strapi.query("api::faq.faq").create({
+      data: sample,
+    });
+
+    ctx.body = sample;
   },
 };

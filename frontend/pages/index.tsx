@@ -5,7 +5,7 @@ import FaqItem from "../components/FaqItem";
 import styles from "../styles/Faq.module.css";
 
 export const getServerSideProps = async () => {
-  const response = await fetch("http://localhost:1337/api/faqs");
+  const response = await fetch(process.env.API_URL + "/faqs");
   const { data: faqs }: IResponse = await response.json();
 
   return {
