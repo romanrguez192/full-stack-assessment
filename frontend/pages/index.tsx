@@ -1,5 +1,4 @@
 import type { InferGetServerSidePropsType } from "next";
-import Image from "next/image";
 import { IResponse } from "../interfaces";
 import Head from "../components/Head";
 import FaqItem from "../components/FaqItem";
