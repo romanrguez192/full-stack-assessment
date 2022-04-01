@@ -4,7 +4,7 @@
 
 A FAQ Page based on [this example](https://standfortrees.org/faq/) built with Next.js, fetching its data from a Strapi 4 instance.
 
-## Api Endpoints
+## API Endpoints
 
 ```
 GET /api/faqs
